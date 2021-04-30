@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "mobilenode.com.zerohybrid"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionName '2.1.5'
+        versionCode 215
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            //proguardFiles += file('proguard-android.txt') + file('proguard-rules.pro')
+        }
+    }
+    productFlavors {
+    }
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:23.1.1'
+    implementation 'com.android.support:design:23.1.1'
+    implementation 'com.google.android.gms:play-services-appindexing:8.1.0'
+    implementation 'com.android.support:support-v4:23.1.1'
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobilenode.com.zerohybrid">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!--
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    -->
+
+    <application
+        android:name=".tools.BurstContext"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ZeroHybrid Mobile Node"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- SplashScreen Activity -->
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="Mobile Node"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.ActionBar.Transparent">
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ControlActivity"
+            android:label="ControlPanel"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mobilenode.com.zerohybrid.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".PrefActivity"
+            android:label="@string/title_activity_pref"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mobile.com.zerohybrid.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
