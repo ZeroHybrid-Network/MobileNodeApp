@@ -1,0 +1,104 @@
+.navbar-expand-md .last-nav-item {
+  position: relative;
+}
+
+.navbar-expand-md .last-nav-item {
+  position: relative;
+}
+
+.navbar-expand-md .last-nav-item .showJoin {
+  position: absolute;
+  width: 300px;
+  top: 48px;
+  right: -88px;
+  z-index: 999;
+  background-color: #fff;
+  /* -webkit-box-shadow: darkgrey 0px 0px 5px -3px;
+  box-shadow: darkgrey 0px 0px 5px -3px; */
+  border: 1px solid #e4e1e4;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 150px;
+  display: none;
+  /* height: 0; */
+  /*display: block;*/
+}
+#showCode{
+  display: none;
+  width: 150px;
+  height: 150px;
+  position:absolute;
+  top:15px;
+  left: 30px;
+  padding: 10px;
+}
+#showCode i{
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #fff;
+  border-right:10px solid transparent;
+  border-bottom:10px solid transparent;
+  border-left:10px solid transparent;
+  transform: rotate(180deg);
+  margin-left: 90px
+}
+.navbar-expand-md .last-nav-item:hover .showJoin {
+  display: block;
+}
+#showCode p{
+  background-color:#fff;
+  text-align: center;
+  line-height: 15px
+}
+
+.navbar-expand-md .last-nav-item .showJoin a.linkA {
+  display: block;
+  color: #000;
+  box-sizing: border-box;
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+.navbar-expand-md .last-nav-item .showJoin a.linkA span {
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+.navbar-expand-md .last-nav-item .showJoin a.changeGrey:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.navbar-expand-md .last-nav-item .showJoin h3 {
+  border-bottom: 1px solid #f5f4f5;
+  padding-left: 5px;
+  line-height: 30px;
+  width: 100%;
+}
+
+/* .navbar-expand-md .last-nav-item .showJoin i {
+  position: absolute;
+  top: -35px;
+  left: 132px;
+  display: block;
+  width: 0px;
+  border: 20px solid #e9e7e9;
+  border-color: transparent transparent #fff transparent;
+} */
+.container-xl .row .col-sm-6 .card .changeAvatar {
+  background: #cbd8f7 no-repeat center/cover;
+}
+
+.navbar-expand-md .last-nav-item .showJoin a.forbid {
+  cursor: none;
+}
+#copyRight{
+  box-sizing: border-box;
+  /*padding-left: 30%;*/
+}
+@media (min-width: 320px) and (max-width: 700px){
+  #copyRight{
+    box-sizing: border-box;
+    padding-left: 20%;
+}
+}
