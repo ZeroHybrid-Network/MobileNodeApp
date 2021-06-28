@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Abstract](#abstract)
+- [Installation](#installation)
+- [Start the computing node](#start-the-computing-node)
+  - [Login](#login)
+  - [Launch the computing node](#launch-the-computing-node)
+  - [Monitor Panel](#monitor-panel)
+- [Account and wallet](#account-and-wallet)
+  - [Wallet](#wallet)
+  - [Rewards model](#rewards-model)
+  - [Testnet policies](#testnet-policies)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Abstract
 
 Here will introduce how to install the Computing Node App on the mobile phone by which integrate idle computing power to ZeroHybrid. And use tools to monitor resource consuming and check rewards.
