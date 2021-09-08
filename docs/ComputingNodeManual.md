@@ -23,7 +23,7 @@ Computing Node App currently supports Android phones with ARM v8a and v7a archit
 
 ## Installation
 
-You can download apk from [here](https://github.com/ZeroHybrid-Network/MobileNodeApp/blob/main/docs/packages/zh-app-preview_068_sol_sign.apk "Download APK of computing node").
+You can download apk from [here](https://github.com/ZeroHybrid-Network/MobileNodeApp/blob/main/docs/packages/app-zh-0.7.3-sign.apk "Download APK of computing node").
 
 ## Start the computing node
 
