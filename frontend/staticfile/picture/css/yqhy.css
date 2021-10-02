@@ -1,0 +1,56 @@
+.content{
+    width: 96%;
+    margin-left: 2%;
+}
+body{
+    background: #da603e;
+}
+
+.nav .i1{
+    width: 100%;
+}
+.nav .i2{
+    width: 0.4rem;
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-left: 2%;
+    position: absolute;
+        top: 0;
+}
+.card{
+    background: #fff0b2;
+    border-radius: 10px;
+    margin-bottom: 0.3rem;
+    margin-top: 0.6rem;
+    padding-bottom: 0.3rem;
+}
+.card .i1{
+    height: 0.7rem;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    bottom: 0.35rem;
+}
+.card .i2{
+        font-size: 1rem;
+    color: #ff7114;
+    font-weight: bold;
+    text-align: center;
+}
+.card .i3{
+        border: none;
+    background: url(../img/yqhy_4.png) right top repeat-x;
+    background-size: 100% 100%;
+    font-size: 0.35rem;
+    color: #fff;
+    font-family: Microsoft Yahei,SimSun,Arial Narrow;
+    padding: 0.1rem 20%;
+    border-radius: 5px;
+    margin: 0.3rem auto;
+    display: block;
+}
+.card .i4{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}

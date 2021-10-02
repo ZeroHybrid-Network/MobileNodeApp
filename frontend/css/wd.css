@@ -1,0 +1,115 @@
+.content{
+    width: 96%;
+    margin-left: 2%;
+        padding-bottom: 1.2rem;
+}
+body{
+    background: #f8f8f8;
+}
+.nav{
+    background: url("../img/wd_1.png") top center no-repeat;
+    background-size: 100% 100%; 
+}
+.nav img{
+    width: 0.4rem;
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-left: 2%;
+}
+.nav .i1{
+    text-align: center;
+    color: #fff;
+    font-size: 0.35rem;
+    position: relative;
+    bottom: .5rem;
+        width: 50%;
+    margin: 0 auto;
+}
+.nav .i2{
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 0.2rem 0 0.1rem 0;
+}
+.nav .i3{
+    text-align: center;
+    color: #ffc59f;
+    padding-bottom: 0.5rem;
+    font-size: 0.3rem;
+}
+.nav .i4{
+    text-align: left;
+    color: #fff;
+    padding-bottom: 0.5rem;
+    font-size: 0.25rem;
+}
+.nav .pl{
+    width: 96%;
+    margin-left: 2%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    background: none;
+    color: #fff;
+    font-size: 0.25rem;
+    white-space: nowrap;/*加宽度width属来兼容部分浏览*/
+}
+.nav .pb{
+    width: 96%;
+    align-content: center;
+    horiz-align: center;
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 0.1rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff6e10;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #ff6e10;
+}
+
+.button:hover {background-color: #ff6e10}
+
+.button:active {
+    background-color: #ff6e10;
+    box-shadow: 0 5px #ff6e10;
+    transform: translateY(4px);
+}
+.content .i1{
+    color: #ff6e10;
+    font-size: 0.30rem;
+    padding: 0.2rem 0;
+}
+.content table{
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+}
+.content table th{
+background: #f9f9f9;
+    font-size: 0.3rem;
+    font-weight: normal;
+    padding: 0.2rem 0;
+}
+.content table .i2{
+    width: 40%;
+}
+.content table .i3{
+    width: 30%;
+}
+.content table .i4{
+    width: 30%;
+}
+.content table td{
+        text-align: center;
+    font-size: 0.25rem;
+    padding: 0.2rem;
+    border-bottom: 1px solid #e5e5e5;
+}

@@ -1,0 +1,24 @@
+#div1{
+    background-color: #1D6887;
+    z-index: 999;
+    width: 80px;
+    height: 80px;
+    position:absolute;
+
+}
+#div2{
+    background-color: #4bbc1a;
+    width: 100%;
+    height: 100%;
+    boxder:1px solid #ccc;
+    filter:alpha(opacity:30);
+    opacity:0.3;
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.1;
+}
+/*#div3{*/
+    /*background-color: #1f8fc4;*/
+    /*width: 50%;*/
+    /*height: 50%;*/
+    /*align-self: center;*/
+/*}*/

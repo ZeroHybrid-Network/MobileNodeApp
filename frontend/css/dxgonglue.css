@@ -1,0 +1,45 @@
+.dxcontent{
+    width: 96%;
+    margin-left: 2%;
+}
+body{
+    background: #da603e;
+}
+
+.dx .i1{
+    width: 100%;
+}
+.dx .i2{
+    width: 0.4rem;
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-left: 2%;
+    position: absolute;
+    top: 0;
+}
+.dxgl{
+    background: #fff0b2;
+    border-radius: 10px;
+    margin-bottom: 0.3rem;
+    margin-top: 0.2rem;
+    padding-bottom: 0.3rem;
+}
+.dxgl .i1{
+    height: 0.7rem;
+    margin-bottom: 0.1rem;
+    text-align: center;
+    font-size: 0.25rem;
+    color: #fff;
+    align-content: center;
+    display: block;
+    position: relative;
+    bottom: 0.35rem;
+}
+.dxgl .i2{
+    margin-bottom: 0.1rem;
+    text-align: center;
+    font-size: 0.2rem;
+    align-content: center;
+    display: block;
+    position: relative;
+}

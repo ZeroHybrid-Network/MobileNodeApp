@@ -1,0 +1,85 @@
+.content{
+    width: 96%;
+    margin-left: 2%;
+}
+body{
+    background: #f8f8f8;
+}
+
+.nav{
+    height: 1rem;
+    background: url("../img/sdzt_1.png") top right repeat-x;
+    background-size: auto auto; 
+}
+.nav img{
+    width: 0.4rem;
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-left: 2%;
+}
+.nav p{
+    text-align: center;
+    color: #fff;
+    font-size: 0.35rem;
+    position: relative;
+    bottom: .5rem;
+        width: 50%;
+    margin: 0 auto;
+}
+.card{    
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+padding: 0.3rem 0;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+.card .i1{
+    text-align: center;
+    color: #ff6d0f;
+    font-size: 0.35rem;
+    background: url(../img/sdzt_10.png) center top no-repeat;
+    background-size: 41% auto;
+    line-height: 0.35rem;
+    margin-bottom: 0.3rem;
+}
+.card .i2{
+    text-align: center;
+    color: #a70fff;
+    font-size: 0.35rem;
+    background: url(../img/sdzt_11.png) center top no-repeat;
+    background-size: 41% auto;
+    line-height: 0.35rem;
+    margin-bottom: 0.3rem;
+  
+}
+.card .i3{
+    text-align: center;
+    color: #5ac8d2;
+    font-size: 0.35rem;
+    background: url(../img/sdzt_12.png) center top no-repeat;
+    background-size: 41% auto;
+    line-height: 0.35rem;
+    margin-bottom: 0.3rem;
+  
+}
+.card a{
+        display: inline-block;
+    width: 49%;
+}
+
+
+.card #img1{
+        width: 60%;
+    margin: 0 auto;
+    display: table-cell;
+}
+
+.card  .img1{
+    width: 60%;
+    margin: 0 auto;
+    display: table-cell;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+   
+}

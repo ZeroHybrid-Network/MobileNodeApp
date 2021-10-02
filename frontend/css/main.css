@@ -1,0 +1,179 @@
+.content{
+    background-size:100% auto;
+    background-color:  #111a14;
+    padding-bottom:1rem; 
+}
+
+.content .main_bg{
+    background: url("../img/index_bg.png") top center no-repeat;
+    background-size:100% 100%;
+    margin-top: 11px;
+}
+
+.content .gonggao{
+    background: rgba(0, 0, 0, 0.2);
+    padding:0.2rem 0 0.2rem 3%;
+    /*height: 30px;*/
+    overflow: hidden;
+}
+.content .gonggao .i1{
+    width: 6%;
+}
+.content .gonggao .i2{
+    color: #fff;
+    font-size: 0.3rem;
+    padding-left: 2%;
+    position: relative;
+    bottom: 0.10rem;
+    width: 8%;
+}
+.content .gonggao .i3{
+    color: #fff;
+    font-size: 0.3rem;
+    position: relative;
+    bottom: 0.00rem;
+    width: 86%;
+    align:left;
+}
+
+
+#mar{width: 80%;
+      align-content: left;
+       bottom: 0.05rem;}
+.dixingl img{
+    width: 25%;
+    margin: 0.4rem 0;
+}
+
+.index_but .i3{
+    color: #fff;
+    padding-top: 11px;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+.content  .index_but .i1{
+    background: url(../img/index_4.png) top center no-repeat;
+    background-size: 70% auto;
+    padding: 2% 20% 42% 20%;
+    text-align: center;
+    color: #fe7116;
+}
+.content  .index_but .i2{
+    background: url(../img/index_5.png) top center no-repeat;
+    background-size:70% auto;
+    padding: 2% 20% 42% 20%;
+    text-align: center;
+    color: #f7c911;
+}
+
+.content .paihang{
+    background: url("../img/index_6.png") top center no-repeat;
+    background-size:100% auto;
+    background-color:  #fff;
+    padding-top: 0.4rem;
+    width: 96%;
+    margin: 0 auto;
+    border-radius: 0 0 15px 15px;
+}
+.content .paihang .i1{
+    color: #fc6809;
+    font-size: 0.35rem;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.content .paihang .i2{
+    float: right;
+    margin-right: 5%;
+}
+.content .paihang table{
+    width: 96%;
+    margin: 0.2rem auto;
+    font-size:0.3rem; 
+    padding-bottom: 0.6rem;
+}
+.dixingl p{
+        margin: 10px 0 0 26px;
+    display: inline-block;
+    font-size: 14px;
+    color: #45daff;
+}
+.dix-right{
+    float: right;
+        width: 30%; 
+        margin-bottom: -1.2rem;
+}
+.dix-right p{
+    height: 38px;
+    position: relative;
+    bottom: 1.3rem;
+    color: #45daff;
+    background: url(../img/index_11.png) top right no-repeat;
+    background-size: 100% 74%;
+    font-size: 14px;
+    padding-top: 8px;
+    padding-left: 17px;
+}
+.content .paihang table th{
+    width: 33%;
+    background: #f7f5f6;
+    border: none;
+    margin: 0;
+    padding: 0.1rem 0;
+    font-weight: normal;
+}
+.content .paihang table td{
+    text-align: center;
+    padding: 0.1rem 0;
+    border-bottom:1px solid #e5e5e5; 
+}
+.content .paihang table td img{
+    width: 20%; 
+}
+.ta_mingci{
+    color: #fc7528;
+    color: #fc7528;
+    font-size: 0.4rem;
+    font-style: italic;
+}
+#dianxian{
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 110px 110px 0 0;
+    position: relative;
+    bottom: 10px;
+}
+#dianxian img{
+    position: absolute;
+}
+  .shortline {
+      margin: 30px 0;
+      width: 40px;
+      height: 3px;
+      background: #394783;
+  }
+  
+  .line{
+    width: 7%;
+    margin: 1em auto;
+    background: #1D6887;
+  }
+
+  .doclink{
+    display: inline-block;
+    margin-top:0.11rem;
+    margin-left:0.75rem
+  }
+
+  .docdiv{
+    height: 5%;overflow: hidden;
+    background: url(/zerohybrid/staticfile/picture/img/index_2.png) top left no-repeat;
+    background-size: auto 100%;
+    margin-top: 0.2rem;
+    margin-left: 1.15rem;
+  }
+
+
+  
