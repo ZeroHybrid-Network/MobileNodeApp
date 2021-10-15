@@ -20,9 +20,10 @@
     <script src="<%=request.getContextPath()%>/staticfile/picture/js/jquery.min.js"></script>
     <script src="<%=request.getContextPath()%>/staticfile/picture/js/modernizr.custom.min.js"></script>
     <script src="<%=request.getContextPath()%>/staticfile/picture/js/jquery.rwdimagemaps.min.js"></script>
+    <script src="<%=request.getContextPath()%>/staticfile/picture/js/toastAlert.js"></script>
 </head>
 <%
-    if(request.getParameter("ver")==null && 1>2){
+    if(request.getParameter("ver")==null || request.getParameter("ver").compareTo("v0.8.2") < 0){
 %>
             <html><p align=center>This version was expired. Please download the newest package. <br/> <a href="#" onclick="AndroidNative.logout();">Close</a></p></html>
 <%
@@ -45,16 +46,7 @@
            <!--<br/><button class="code_fa" id="bt01" >Generate mnemonics</button>-->
        </div>
         <button class="dl" id="login" >Login</button>
-       <!--
-       <div class="rephonesty1" align="center" style="visibility: hidden">
-           <input   type="checkbox" align="center" name="rephone" id="rephone" class="rephonesty"  onclick="rememberUser();"
-                   style="margin-left:1px;visibility: hidden"  />
-           Remember Username
-           <input   type="checkbox"  align="center" name="autologin" id="isAuto" class="rephonesty" onclick="remember();"
-                style="margin-left:10px;visibility: hidden" />
-           Autologin in 30 days
-       </div>
-       -->
+
         <script type="text/javascript">
 
         var pwd=0;
@@ -80,7 +72,7 @@
                 function settime(obj) {
                     if($("#mobile").val() == "" || !checkEmail($("#mobile").val()) || countdown == 0 ) {
                         $(obj).attr("disabled",false);
-                        $(obj).text("GetCode");
+                        $(obj).text("Get");
                         countdown = 60;
                         return;
                     }else{
@@ -97,7 +89,7 @@
             <!--
             document.getElementById("bt01").onclick=getMnemonic;
             function getMnemonic(mneStr){
-              var url = "http://111.6.79.62:5010/getIdByPhrase";
+              var url = "<!--prod_walletHostUrl-->/getIdByPhrase";
 			  console.log("murl:"+url);
               var dataNum = {};
               if(typeof(mneStr) !== 'objec' && mneStr.length > 10){
@@ -125,7 +117,7 @@
             function geturl(){
             	  invokeSettime("#bt01");
             	  if ($("#mobile").val() == "" || !checkEmail($("#mobile").val())) {
-                   window.alert("Invalid Email");
+                   toastAlert("Please enter the correct email address");
             	  } else{
                       var url="/zerohybrid/login/email";
                       var phone=$("#mobile").val();
@@ -140,13 +132,13 @@
                           success: function (json) {
                              var result=json;                          
                              if(result==0){
-                            	  window.alert('Verification code sent successfully!');
+                            	  toastAlert('Verification code sent successfully!');
                              } else if(result==1){
-                        	      window.alert('Invalid ID');
+                        	      toastAlert('Invalid ID');
                              }else if(result==2){
-                                  window.alert('ID was blocked');
+                                  toastAlert('ID was blocked');
                              }else{
-                                 window.alert('Failed.');
+                                 toastAlert('Failed.');
                                  //myFunction(phone);
                              }
                           }
@@ -174,31 +166,31 @@
                         success: function (json) {
                             var result = json;
                             if (result == 1) {
-                                window.alert('Invalid ID');
+                                toastAlert('Invalid ID');
                                 document.getElementById("zhenzhao").style.display = "none";
                             } else if (result == 0) {
-                                window.alert("Signed in！\n\rPlease check Vcode.");
+                                toastAlert("Signed in！\n\rPlease check Vcode.");
                                 document.getElementById("zhenzhao").style.display = "none";
                             } else if (result == 3) {
-                                window.alert('Invalid ID or blocked');
+                                toastAlert('Invalid ID or blocked');
                                 document.getElementById("zhenzhao").style.display = "none";
                             } else if (result == 2) {
-                                window.alert('Invalid ID.');
+                                toastAlert('Invalid ID.');
                                 document.getElementById("zhenzhao").style.display = "none";
                             } else {
                                 document.getElementById("zhenzhao").style.display = "none";
-                                window.alert('ID reach the limitation');
+                                toastAlert('ID reach the limitation');
                             }
                         },
                         error: function () {
-                            window.alert('System Error');
+                            toastAlert('System Error');
                             document.getElementById("zhenzhao").style.display = "none";
 
                         }
                     })
                 }else{
-                	 window.alert("ID can not be blank");
-                    document.getElementById("zhenzhao").style.display="none";
+                	 toastAlert("ID can not be blank");
+                   document.getElementById("zhenzhao").style.display="none";
                 	 return false;
                    }
               
@@ -220,7 +212,8 @@
                 console.log("phoneLen:"+phone.length);
            	    var dataNum={"phone":phone,"yzm":yzm,"rephone":rephone,"isAuto":isAuto,"LoginFlag":flag};
                 if(yzm==""||isNaN(yzm)||yzm.length!=6){
-                    alert("Invalid code");
+                    toastAlert("Please enter the correct verification code");
+                    rollbackLogin();
                 }else{
                     var url="/zerohybrid/login/yzm";
 
@@ -247,25 +240,16 @@
                             }else{
                                 //AndroidNative.toLogin(result);
                                 rollbackLogin();
-                                window.alert('Invalid code!');
+                                toastAlert('Please enter the correct verification code');
                             };
                         },
                         error: function(){
                         	  rollbackLogin();
-                            window.alert('System error'); 
+                            toastAlert('System error'); 
                         }
 
                     })
-                    /*
-                    result = "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMzkxMDUxOTIxNyIsImlhdCI6MTYyMjA4MTY4Miwic3ViIjoib2JqZWN0IiwiaXNzIjoiZ3Jhdml0eSIsImV4cCI6MTYyMjE2ODA4Mn0.fQExOeT5BR87jgUXI-TGWX70NexNSNzQ_YG4pfLdoio-:-aboutFlag";
-                    var token = "Authorization=" + result.split("-:-")[0];
-                    document.cookie= token;
-                    var phone=$("#mobile").val();
-                    window.alert('skipped');
-                    window.location.href="/zerohybrid/user/toIndex";
-                    AndroidNative.writePhoneNumber(phone);
-                    AndroidNative.toLogin(result);
-                    */
+
                 }
             });
             

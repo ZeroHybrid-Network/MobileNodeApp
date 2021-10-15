@@ -121,4 +121,35 @@ body{
 	color: #fc7016;
 }
 
+.toast{
+	height: 28px;
+	width: 200px;
+	position:fixed;
+	left:40%;
+	bottom:20px;
+	
+	background: rgba(255,255,255,0.1);
+	border-radius: 2px;
+	display: none;
+}
+.toastText{
+	position: absolute;
+	left: 4.5%;
+	right: 4.5%;
+	top: 21.43%;
+	bottom: 21.43%;
+	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 16px;
+	/* identical to box height, or 160% */
+	
+	text-align: center;
+	
+	color: rgba(255,255,255,0.5);
+
+}
+
 

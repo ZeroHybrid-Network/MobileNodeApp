@@ -89,7 +89,7 @@ input::-webkit-input-placeholder{
     background: #58B474;
     color: #575d5a;
     border: none;
-    border-radius: 10px;
+    border-radius: 2px;
     font-size: .35rem;
     font-family: Microsoft Yahei,SimSun,Arial Narrow;
     margin-top: 0.4rem;
